@@ -1,6 +1,6 @@
 // Modulos
 import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
@@ -10,17 +10,20 @@ import {routing, appRoutingProviders} from './app.routing';
 // Componentes
 import { AppComponent }  from './app.component';
 import { ProfileComponent } from './components/profile.component';
+import { PhotosComponent } from './components/photos.component';
 
 @NgModule({
-    imports: [BrowserModule,
-  				  HttpModule,
-  				  FormsModule,
-  				  routing
+    imports: [  BrowserModule,
+  			    HttpModule,
+  			    FormsModule,
+  			    routing
+                  
     ],
     declarations: [AppComponent,
-  				  ProfileComponent
+  				  ProfileComponent,
+                  PhotosComponent
     ],
-    providers: [appRoutingProviders],
+    providers: [ Title],
     bootstrap: [AppComponent]
 })
 

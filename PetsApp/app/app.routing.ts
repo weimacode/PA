@@ -2,15 +2,13 @@
 
 //Componentes
 import { ProfileComponent } from './components/profile.component';
+import { PhotosComponent } from './components/photos.component';
 
 
 const appRoutes: Routes = [
-    {
-        path: '', //default pathMatch: 'prefix'
-        pathMatch: 'full',
-        redirectTo: 'profile'
-    },
-    { path: 'profile', component: ProfileComponent }
+    
+    { path: 'profile', component: ProfileComponent },
+    { path: 'photos', component: PhotosComponent }
 
 ];
 

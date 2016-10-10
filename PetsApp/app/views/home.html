@@ -1,16 +1,17 @@
 ﻿<header id="header">
-    <a [routerLink]="['Home']">
-        <img src="../../assets/images/angular.png" id="logo" />
-    </a>
     <h1>{{titulo}}</h1>
     <div class="clearfix"></div>
 </header>
 <nav id="nav">
     <ul>
-       
+        <!--<li><a [routerLink]="/home">Inicio</a></li>  -->
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/photos">Photos</a></li>
     </ul>
 </nav>
 <section class="main">
+    <h1 style="color:red">Top of page</h1>
     <router-outlet></router-outlet>
-    <div class="clearfix"></div>
+    <div class="clearfix"></div> 
+    <h1 style="color:red">End of page</h1>
 </section>

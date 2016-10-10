@@ -2,8 +2,8 @@
 
 @Component({
     selector: 'profile',
-    template: '<h1>Hola</h1>'
+    templateUrl: 'app/views/profile.html'
 })
-export class ProfileComponent {
-
+export class ProfileComponent implements OnInit{
+    public titulo = "Profile";
 }

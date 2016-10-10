@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\views\home.html" />
+    <Content Include="app\views\photos.html" />
     <Content Include="app\views\profile.html" />
     <Content Include="index.html" />
     <Content Include="systemjs.config.js" />
@@ -43,6 +44,7 @@
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
+    <TypeScriptCompile Include="app\components\photos.component.ts" />
     <TypeScriptCompile Include="app\components\profile.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
   </ItemGroup>
